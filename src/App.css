@@ -1,0 +1,291 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.App {
+  flex: 1;
+  display: flex;
+}
+
+body {
+  margin:0;
+  padding:0;
+}
+
+.Sidebar {
+  height:100%;
+  background-color: #323F51;
+  width:250px;
+}
+
+.Sidebar .avatar{
+  height: auto;
+  width: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.SidebarList{
+  padding:0;
+  height: auto;
+  width:100%;
+}
+
+.SidebarList .row{
+  width:100%;
+  height:60px;
+  list-style-type: none;
+  margin:0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: sans-serif;
+  align-items: center;
+  color: white;
+}
+.SidebarList .row:hover{
+  cursor: pointer;
+  background-color: #2B3746;
+}
+
+.SidebarList #active{
+  background-color: #2B3746;
+}
+
+.row #icon{
+  flex:30%;
+  display: grid;
+  place-items: center;
+}
+
+.row #title{
+  flex:70%;
+}
+
+.component-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.card {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+}
+
+.table-width {
+  width: 80%;
+}
+
+.form-container{
+  width:70%
+}
+
+.form-button{
+  margin: 15px;
+}
+
+.page-title {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+}
+
+.main-title {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+}
+
+
+.title-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+#title{
+  color: #f1f1f1;
+}
+
+.avatar-container{
+  display: flex;
+  justify-content: center;
+}
+
+.add-button{
+  background-color: black;
+  margin-left: 8px 
+}
+
+.add-container{
+  display: flex;
+  justify-content: center;
+}
+
+
+.landing-page {
+  width: 100vw;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 350px; 
+  /* background-image: url('path/to/your-image.jpg'); */
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-section h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+
+.hero-section p {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Features section */
+.features-section {
+  padding: 30px 0;
+}
+
+.features-section h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Feature card */
+.feature-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card .icon {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 16px;
+  color: #777;
+}
+
+/* Call-to-action section */
+.cta-section {
+  padding: 40px 0;
+}
+
+.cta-section h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.cta-section button {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-section button:hover {
+  background-color: #0056b3;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Adjust the height as needed */
+}
+
+.login-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-container .form-group {
+  margin-bottom: 20px;
+}
+
+.login-container label {
+  font-size: 16px;
+}
+
+.login-container input {
+  width: 300px; /* Adjust the width as needed */
+  padding: 10px;
+  font-size: 16px;
+}
+
+.login-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+}
+
+.login-container .signup-button {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #007bff;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
